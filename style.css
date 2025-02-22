@@ -1,0 +1,230 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primeiro: #263ded;
+  --secundaria: #a72c9d;
+  --darkenes: #070a12;
+  --moreDarkness: #000000;
+  --claro: #f4f6f9;
+  --glass: rgba(255, 255, 255, 0.1);
+}
+body{
+   background-color: var(--darkenes);
+   color: var(--claro);
+}
+.navegaçãozinha{
+  position: fixed;
+  background: rgba(255, 255, 255, 0.1);
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  padding:1.5rem ;
+}
+.menu{
+  display: flex;
+  list-style: none;
+  gap: 3rem;
+  justify-content: center;
+}
+.menuzinho{
+  text-decoration: none;
+  color: var(--claro);
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem, 0;
+}
+.menuzinho::after{
+   content: '';
+   height: 2px;
+   width: 0;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   background: linear-gradient(90deg, var(--primeiro), var(--secundaria));
+   transition: width 0.8s ease;
+}
+.menuzinho:hover::after{
+   width: 100% ;
+}
+.foto-perfil{
+   width: 250px;
+   height: 250px;
+   -webkit-box-align: 5px -17px 13px 12px rgba(10,38,56,1);
+   box-shadow: 5px -17px 13px 12px rgba(10,38,56,1);
+   border-radius: 60%;
+   border: 4px var(--glass);
+   margin-left: 15%;
+   transition: transform 0.7s ease;
+   animation: rotate 10s linear infinite;
+}
+.foto-perfil:hover {
+    transform: scale(1.2); 
+  }
+
+.principal{
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: row;
+}
+.paragrafo-especial{
+  text-align: center;
+
+}
+.paragrafo-especial span{
+    color:red;
+}
+h1{
+   font-size: 2.5rem;
+   font-weight:bold ;
+   color: plum;
+   margin: 15px;
+}
+.sobre{
+   padding: 3rem 2rem;
+   
+
+}
+.sobre-mim{
+  font-size: 0.7rem;
+  color: var(--claro);
+}
+.sobre-titulo{
+  font-size: 2.0rem;
+  text-align: center;
+}
+.box{
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1.5px solid var(--glass);
+    backdrop-filter: blur(15px);
+    background-color:rgba(255,255, 255, 0.15);
+}
+.apresentação{
+  text-align: center;
+  font-size: 1.8px; 
+  margin-bottom: 2.5rem;}
+/* ... (outros estilos) ... */
+.projetos-images {
+    width: 100%;
+    height: auto;
+    display: block;
+}   
+.projetos{
+   padding: 6rem 4rem;
+
+
+}
+.projetos-titulo{
+   text-align: center;
+   font-size: 3.0rem;
+   margin-bottom: 5px;
+
+}
+
+.card-projects:hover{
+   box-shadow: 25px -1px 22px -3px rgba(95,63,133,1);
+   transform: translateY(-10px) scale(1.01);
+   }
+.projetos-caixa{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150deg, 1fr ));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 ;
+
+}
+.projetos-images{
+   height: 200px;
+   width: 100%;
+   object-fit: cover;
+}
+.card-projects{
+background: rgba(255,255, 255, 0.15);
+border-radius: 0px;
+backdrop-filter: blur(5px);
+border: 1px var(--glass);
+overflow: hidden;
+transition: all 0.9 ease;
+cursor: pointer;
+}
+.paragrafo-projeto{
+ font-size: 20px;
+
+
+}
+
+.github a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background-color: #18171C; /* Cor de fundo do GitHub */
+    color: #FFFFFF;
+    text-decoration: none; 
+    border-radius: 5px;
+    font-weight: bold; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .github a:hover {
+    background-color: #0C0D0E;
+  }
+  
+  .github i {
+    margin-right: 5px;
+  }
+  .botao-email {
+    display: inline-block;
+    padding: 10px 16px; 
+    background-color: #24292e;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px; 
+    font-weight: 500; 
+    transition: background-color 0.3s ease;
+    border: none; 
+    cursor: pointer;
+  }
+  
+  .botao-email:hover {
+    background-color: #1b1f22;
+  }
+  
+  .botao-email i {
+    margin-right: 5px;
+  }
+  .botao-linkedin {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0077b5; /* Cor de fundo (azul do LinkedIn) */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .botao-linkedin:hover {
+    background-color: #005f8c; /* Cor de fundo ao passar o mouse (mais escura) */
+  }
+  
+  .botao-linkedin i {
+    margin-right: 10px;
+  }
+ .title-social{
+    text-align: center;
+    font-size: 35px;
+ }
+ 
