@@ -10,7 +10,7 @@ Welcome to my online portfolio! This project was developed using **HTML** and **
 
 This portfolio is constantly evolving. It will be updated regularly with new projects as I complete them, and with new information about my professional progress.
 
-##update I just uploaded on the internet
+## update I just uploaded on the internet
 
 If you want to see it, just click on the link:
 
